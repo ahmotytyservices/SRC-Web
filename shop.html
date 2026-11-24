@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><title>SRC Shop | SEA REAPER Community</title><link href="css/styles.css" rel="stylesheet"/></head><body><div class="credit-banner">
+    This Webpage Has Been Made Produced And Uploaded By Ahmotyty
+  </div><header class="navbar"><div class="container nav-content">
+<a class="logo" href="index.html">SRC <span>SEA REAPER</span></a>
+<nav class="nav-links" id="navLinks">
+<a href="index.html">Home</a><a href="shop.html">Shop</a><a href="order.html">Order Place</a><a href="services.html">Services &amp; Levi</a><a href="roles.html">Roles</a><a href="rules.html">Rules</a><a href="proofs.html">Proofs &amp; Vouches</a>
+</nav>
+<a class="btn btn-primary nav-cta" data-discord-link="" href="https://discord.gg/XxMWvK7WcJ" rel="noopener noreferrer" target="_blank">Join Discord</a>
+<a class="btn btn-outline cart-nav" href="order.html">Cart <span id="cartCount">0</span></a>
+</div></header><section class="section" id="shop">
+<div class="container">
+<div class="section-header">
+<h2>SRC Fruit &amp; Perm Shop</h2>
+<p>
+          Click any item to join Discord and open a ticket in <strong>#purchase-ticket</strong>.
+          Discounts apply when buying 2+ of the same fruit or multiple Perms!
+        </p>
+</div>
+<!-- Interactive Controls: Category Filter & Currency Toggle -->
+<div class="shop-controls">
+<div class="filter-group" id="shopFilters">
+<button class="filter-btn active" data-filter="all">All Items</button>
+<button class="filter-btn" data-filter="physical">Physical Fruits</button>
+<button class="filter-btn" data-filter="perm">Permanent Fruits</button>
+</div>
+<div class="currency-toggle">
+<span>Currency:</span>
+<button class="curr-btn active" data-currency="inr">INR (₹)</button>
+<button class="curr-btn" data-currency="usd">USD ($)</button>
+</div>
+</div>
+<!-- Shop Grid (Populated dynamically by script.js) -->
+<div class="cards-grid" id="shopGrid"></div>
+</div>
+</section><footer class="footer">
+<div class="container">
+<p>
+<strong>SRC (SEA REAPER Community)</strong> — Please respect Discord Terms of Service and Roblox Community Standards at all times.
+      </p>
+<p class="footer-link-row">
+<a data-discord-link="" href="https://discord.gg/XxMWvK7WcJ" rel="noopener noreferrer" target="_blank">
+          https://discord.gg/XxMWvK7WcJ
+        </a>
+</p>
+<p class="bottom-credit">
+        This Webpage Has Been Made Produced And Uploaded By Ahmotyty
+      </p>
+</div>
+</footer><script>document.querySelectorAll('.nav-links a').forEach(a=>{if(a.getAttribute('href')==='shop.html')a.setAttribute('aria-current','page')});</script>
+<script src="js/script.js"></script></body></html>

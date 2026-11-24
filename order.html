@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><title>SRC Order Place | SEA REAPER Community</title><link href="css/styles.css" rel="stylesheet"/></head><body><div class="credit-banner">
+    This Webpage Has Been Made Produced And Uploaded By Ahmotyty
+  </div><header class="navbar"><div class="container nav-content">
+<a class="logo" href="index.html">SRC <span>SEA REAPER</span></a>
+<nav class="nav-links" id="navLinks">
+<a href="index.html">Home</a><a href="shop.html">Shop</a><a href="order.html">Order Place</a><a href="services.html">Services &amp; Levi</a><a href="roles.html">Roles</a><a href="rules.html">Rules</a><a href="proofs.html">Proofs &amp; Vouches</a>
+</nav>
+<a class="btn btn-primary nav-cta" data-discord-link="" href="https://discord.gg/XxMWvK7WcJ" rel="noopener noreferrer" target="_blank">Join Discord</a>
+<a class="btn btn-outline cart-nav" href="order.html">Cart <span id="cartCount">0</span></a>
+</div></header><section class="section section-alt" id="order">
+<div class="container">
+<div class="section-header">
+<span class="badge">Verified SRC Order Ticket System</span>
+<h2>Order Place &amp; Ticket Generator</h2>
+<p>Review your cart or configure a custom package below, generate your order ticket, then copy it and paste it into our official Discord server.</p>
+<a class="btn btn-outline" data-discord-link="" href="https://discord.gg/XxMWvK7WcJ" rel="noopener noreferrer" target="_blank">Open SRC Discord</a>
+</div>
+<div class="order-layout">
+<div class="order-column">
+<div class="order-panel">
+<div class="order-panel-heading"><span class="step-number">1</span><div><h3>Order Items</h3><p>Manage your selected items</p></div><a class="text-link" href="shop.html">+ Browse Shop</a></div>
+<div class="cart-items" id="cartItems"><p class="empty-cart">Your cart is empty. Browse the shop to add items.</p></div>
+<div class="custom-item-box">
+<h4>Quick-Add Package or Custom Option</h4>
+<div class="custom-item-row"><input id="customItemName" placeholder="Package or custom item name" type="text"/><input id="customItemPrice" min="0" placeholder="Price ($)" step="0.01" type="number"/><button class="btn btn-outline" id="addCustomItem" type="button">+ Add Item</button></div>
+<p class="field-hint">Enter a package name and its USD price to add a custom order item.</p>
+</div>
+<div class="addon-list">
+<label class="addon-option"><input id="priorityAddon" type="checkbox"/><span><strong>Priority Express Delivery</strong><small>Fast-track queue (+$5.00)</small></span></label>
+<label class="addon-option"><input id="middlemanAddon" type="checkbox"/><span><strong>Verified SRC Middleman</strong><small>Official Discord escrow (Free)</small></span></label>
+</div>
+<div class="cart-total-row"><span>Estimated Total</span><strong id="cartTotal">$0.00</strong></div>
+</div>
+<div class="order-panel">
+<div class="order-panel-heading"><span class="step-number">2</span><div><h3>Buyer &amp; Trade Information</h3><p>These details will appear on your ticket</p></div></div>
+<div class="order-form-grid">
+<label>Discord Username *<input id="buyerDiscord" placeholder="e.g. player#0001 or @username" required="" type="text"/></label>
+<label>In-Game Username / ID<input id="buyerGame" placeholder="Your in-game handle" type="text"/></label>
+<label>Payment / Trade Method<select id="buyerPayment"><option>Discuss in Discord Ticket</option><option>Robux</option><option>PayPal</option><option>Other (specify in notes)</option></select></label>
+<label>Preferred Server / Region<select id="buyerRegion"><option>Global / Any</option><option>United States</option><option>Europe</option><option>Asia</option><option>India</option><option>Other (specify in notes)</option></select></label>
+<label class="full-field">Custom Notes or Specific Requests<textarea id="buyerNotes" placeholder="Add any custom bundle requests, preferred time, or questions..." rows="4"></textarea></label>
+</div>
+<button class="btn btn-primary generate-btn" id="generateTicket" type="button">Generate Order Ticket</button>
+<p class="ticket-error" id="ticketError" role="alert"></p>
+</div>
+</div>
+<aside class="order-panel ticket-panel">
+<div class="ticket-heading"><div><span class="ticket-kicker">GENERATED ORDER TICKET</span><h3 id="ticketId">#SRC-—</h3></div><span class="ticket-status">Ready to generate</span></div>
+<p class="ticket-instructions">Generate your ticket, then copy the formatted order summary and paste it into the order channel on our official Discord server.</p>
+<pre class="ticket-output" id="ticketOutput">==============================
+       SRC ORDER TICKET       
+==============================
+Ticket ID : Generate ticket
+Discord   : [Enter Discord Username]
+In-Game   : N/A
+Region    : Global / Any
+Payment   : Discuss in Discord Ticket
+------------------------------
+SELECTED ITEMS:
+  • Your cart items will appear here
+------------------------------
+Add-ons   : None
+Est. Total: $0.00
+Notes     : None
+==============================
+Submit at : https://discord.gg/XxMWvK7WcJ</pre>
+<button class="btn btn-primary generate-btn" disabled="" id="copyTicket" type="button">Copy Order Ticket</button>
+<a class="btn btn-outline generate-btn disabled-link" data-discord-link="" href="https://discord.gg/XxMWvK7WcJ" id="openDiscordSubmit" rel="noopener noreferrer" target="_blank">Copy &amp; Open Discord to Submit</a>
+<p class="ticket-footnote">Ticket generation is local to this browser. Submit the copied ticket in Discord; this website does not create a Discord channel automatically.</p>
+</aside>
+</div>
+</div>
+</section><footer class="footer">
+<div class="container">
+<p>
+<strong>SRC (SEA REAPER Community)</strong> — Please respect Discord Terms of Service and Roblox Community Standards at all times.
+      </p>
+<p class="footer-link-row">
+<a data-discord-link="" href="https://discord.gg/XxMWvK7WcJ" rel="noopener noreferrer" target="_blank">
+          https://discord.gg/XxMWvK7WcJ
+        </a>
+</p>
+<p class="bottom-credit">
+        This Webpage Has Been Made Produced And Uploaded By Ahmotyty
+      </p>
+</div>
+</footer><script>document.querySelectorAll('.nav-links a').forEach(a=>{if(a.getAttribute('href')==='order.html')a.setAttribute('aria-current','page')});</script>
+<script src="js/script.js"></script></body></html>
