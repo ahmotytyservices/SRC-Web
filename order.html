@@ -14,7 +14,7 @@
 <div class="section-header">
 <span class="badge">Verified SRC Order Ticket System</span>
 <h2>Order Place &amp; Ticket Generator</h2>
-<p>Review your cart or configure a custom package below, generate your order ticket, then copy it and paste it into our official Discord server.</p>
+<p>Review your cart, generate your order ticket, then copy it and open Discord. Use the SRC ticket panel to create a private order channel.</p>
 <a class="btn btn-outline" data-discord-link="" href="https://discord.gg/XxMWvK7WcJ" rel="noopener noreferrer" target="_blank">Open SRC Discord</a>
 </div>
 <div class="order-layout">
@@ -38,7 +38,7 @@
 <div class="order-form-grid">
 <label>Discord Username *<input id="buyerDiscord" placeholder="e.g. player#0001 or @username" required="" type="text"/></label>
 <label>In-Game Username / ID<input id="buyerGame" placeholder="Your in-game handle" type="text"/></label>
-<label>Payment / Trade Method<select id="buyerPayment"><option>Discuss in Discord Ticket</option><option>Robux</option><option>PayPal</option><option>Other (specify in notes)</option></select></label>
+<label>Payment Method<select id="buyerPayment"><option value="Crypto">Crypto</option><option value="INR">INR</option></select></label>
 <label>Preferred Server / Region<select id="buyerRegion"><option>Global / Any</option><option>United States</option><option>Europe</option><option>Asia</option><option>India</option><option>Other (specify in notes)</option></select></label>
 <label class="full-field">Custom Notes or Specific Requests<textarea id="buyerNotes" placeholder="Add any custom bundle requests, preferred time, or questions..." rows="4"></textarea></label>
 </div>
@@ -48,7 +48,7 @@
 </div>
 <aside class="order-panel ticket-panel">
 <div class="ticket-heading"><div><span class="ticket-kicker">GENERATED ORDER TICKET</span><h3 id="ticketId">#SRC-—</h3></div><span class="ticket-status">Ready to generate</span></div>
-<p class="ticket-instructions">Generate your ticket, then copy the formatted order summary and paste it into the order channel on our official Discord server.</p>
+<p class="ticket-instructions">Generate your ticket, copy it, and open Discord. In the server, press **Create SRC Order Ticket** in the ticket panel, then paste your copied order into the private channel.</p>
 <pre class="ticket-output" id="ticketOutput">==============================
        SRC ORDER TICKET       
 ==============================
@@ -56,7 +56,7 @@ Ticket ID : Generate ticket
 Discord   : [Enter Discord Username]
 In-Game   : N/A
 Region    : Global / Any
-Payment   : Discuss in Discord Ticket
+Payment   : Crypto
 ------------------------------
 SELECTED ITEMS:
   • Your cart items will appear here
@@ -67,8 +67,8 @@ Notes     : None
 ==============================
 Submit at : https://discord.gg/XxMWvK7WcJ</pre>
 <button class="btn btn-primary generate-btn" disabled="" id="copyTicket" type="button">Copy Order Ticket</button>
-<a class="btn btn-outline generate-btn disabled-link" data-discord-link="" href="https://discord.gg/XxMWvK7WcJ" id="openDiscordSubmit" rel="noopener noreferrer" target="_blank">Copy &amp; Open Discord to Submit</a>
-<p class="ticket-footnote">Ticket generation is local to this browser. Submit the copied ticket in Discord; this website does not create a Discord channel automatically.</p>
+<a class="btn btn-outline generate-btn disabled-link" data-discord-link="" href="https://discord.gg/XxMWvK7WcJ" id="openDiscordSubmit" rel="noopener noreferrer" target="_blank">Copy Order &amp; Open Discord</a>
+<p class="ticket-footnote">The website copies your order and opens Discord. The SRC Ticket Bot must be installed and its ticket panel configured to create private channels. After the channel opens, paste your copied order.</p>
 </aside>
 </div>
 </div>
