@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>SRC | SEA REAPER Community</title>
+  <!-- Links our external CSS stylesheet -->
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <!-- ================= TOP PAGE CREDIT BANNER ================= -->
+  <div class="credit-banner">
+    This Webpage Has Been Made Produced And Uploaded By Ahmotyty
+  </div>
+
+  <!-- ================= NAVIGATION BAR ================= -->
+  <header class="navbar">
+    <div class="container nav-content">
+      <a href="#" class="logo">SRC <span>SEA REAPER</span></a>
+      <nav class="nav-links" id="navLinks">
+        <a href="#shop">Shop</a>
+        <a href="#services">Services &amp; Levi</a>
+        <a href="#roles">Roles</a>
+        <a href="#rules">Rules</a>
+        <a href="#proofs">Proofs &amp; Vouches</a>
+      </nav>
+      <!-- Uses data-discord-link so script.js keeps the invite URL synced -->
+      <a
+        href="https://discord.gg/XxMWvK7WcJ"
+        target="_blank"
+        rel="noopener noreferrer"
+        data-discord-link
+        class="btn btn-primary nav-cta"
+      >
+        Join Discord
+      </a>
+    </div>
+  </header>
+
+  <!-- ================= HERO SECTION ================= -->
+  <section class="hero">
+    <div class="container hero-grid">
+      <div class="hero-text">
+        <span class="badge">Blox Fruits Trading • Raids • Community</span>
+        <h1>Welcome to <span>SRC (SEA REAPER Community)</span></h1>
+        <p>
+          Your trusted hub for Blox Fruits trading, verified shop deals, 100+ successful
+          Leviathan hunts, daily giveaways, and peaceful grinding across 3 free private servers.
+        </p>
+        <div class="hero-actions">
+          <a
+            href="https://discord.gg/XxMWvK7WcJ"
+            target="_blank"
+            rel="noopener noreferrer"
+            data-discord-link
+            class="btn btn-primary"
+          >
+            Join Official Discord
+          </a>
+          <a href="#shop" class="btn btn-outline">Explore Fruit Shop</a>
+        </div>
+      </div>
+
+      <!-- Community Quick Stats Grid -->
+      <div class="hero-stats">
+        <div class="stat-card">
+          <h3>100+</h3>
+          <p>Successful Leviathan Hunts</p>
+        </div>
+        <div class="stat-card">
+          <h3>3 Free</h3>
+          <p>Private Grinding Servers</p>
+        </div>
+        <div class="stat-card">
+          <h3>24/7</h3>
+          <p>Trusted Trading &amp; Vetted Staff</p>
+        </div>
+        <div class="stat-card">
+          <h3>Daily</h3>
+          <p>Giveaways, Trials &amp; Tournaments</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= SHOP SECTION ================= -->
+  <section id="shop" class="section">
+    <div class="container">
+      <div class="section-header">
+        <h2>SRC Fruit &amp; Perm Shop</h2>
+        <p>
+          Click any item to join Discord and open a ticket in <strong>#purchase-ticket</strong>.
+          Discounts apply when buying 2+ of the same fruit or multiple Perms!
+        </p>
+      </div>
+
+      <!-- Interactive Controls: Category Filter & Currency Toggle -->
+      <div class="shop-controls">
+        <div class="filter-group" id="shopFilters">
+          <button class="filter-btn active" data-filter="all">All Items</button>
+          <button class="filter-btn" data-filter="physical">Physical Fruits</button>
+          <button class="filter-btn" data-filter="perm">Permanent Fruits</button>
+        </div>
+
+        <div class="currency-toggle">
+          <span>Currency:</span>
+          <button class="curr-btn active" data-currency="inr">INR (₹)</button>
+          <button class="curr-btn" data-currency="usd">USD ($)</button>
+        </div>
+      </div>
+
+      <!-- Shop Grid (Populated dynamically by script.js) -->
+      <div class="cards-grid" id="shopGrid"></div>
+    </div>
+  </section>
+
+  <!-- ================= SERVICES, LEVIATHAN & PRIVATE SERVERS ================= -->
+  <section id="services" class="section section-alt">
+    <div class="container">
+      <div class="section-header">
+        <h2>Services, Leviathan Hunts &amp; Hangouts</h2>
+        <p>Everything available inside our Discord server channels.</p>
+      </div>
+
+      <div class="two-col-grid">
+        <!-- Leviathan Hunt Rules Card -->
+        <div class="info-box warning-border">
+          <h3>🐉 Daily Leviathan &amp; Sea Events (100+ Hunts)</h3>
+          <p class="muted">Follow these strict rules during Leviathan hunts to avoid a blacklist:</p>
+          <ul class="styled-list">
+            <li><strong>Focus on Leviathan Only:</strong> Do NOT jump for other Sea Events (skip Terrorsharks and other spawns).</li>
+            <li><strong>Frozen Dimension / Prehistoric Island:</strong> Do NOT get close to any NPC if found, or you will be <strong>BLACKLISTED</strong>.</li>
+            <li><strong>Fruit Restriction:</strong> Do NOT use <strong>Tiger Fruit</strong> during a Leviathan Hunt.</li>
+            <li><strong>Pro Hunt Tips:</strong> Go Marine, repair the boat if you are Shipwright, don't go AFK, don't start Levi early when Frozen Dimension spawns, and bribe once with Spy.</li>
+          </ul>
+        </div>
+
+        <!-- Services & Private Servers Card -->
+        <div class="info-box">
+          <h3>⚔️ Vetted Services &amp; Free Private Servers</h3>
+          <ul class="styled-list">
+            <li><strong>All Services Available:</strong> Raids, Trials, Bosses, and Sea Events (excluding Pirate King). All staff are vouched; open <strong>#support</strong> if any issue occurs.</li>
+            <li><strong>3 Free Private Servers:</strong> Grind peacefully without bounty hunters in <code>#zoros-ps</code>, <code>#thetruepower-ps</code>, and <code>#clangs-ps</code>.</li>
+            <li><strong>Trusted Trading:</strong> Fast &amp; slow trading channels plus live stock and fruit values.</li>
+            <li><strong>Social &amp; Arena:</strong> Daily giveaways, tournaments, PvP practice, casino, and level-up rewards.</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= ROLES & LEAGUES SECTION ================= -->
+  <section id="roles" class="section">
+    <div class="container">
+      <div class="section-header">
+        <h2>Server Roles &amp; How to Earn Them</h2>
+        <p>Unlock exclusive badges through in-game bounty, server levels, donations, and hosting.</p>
+      </div>
+
+      <div class="filter-group center-filters" id="roleFilters">
+        <button class="filter-btn active" data-role-cat="all">All Roles</button>
+        <button class="filter-btn" data-role-cat="bounty">Bounty Ranks</button>
+        <button class="filter-btn" data-role-cat="special">Special &amp; Donor</button>
+        <button class="filter-btn" data-role-cat="league">Level Leagues</button>
+      </div>
+
+      <!-- Roles Grid (Populated dynamically by script.js) -->
+      <div class="roles-grid" id="rolesGrid"></div>
+    </div>
+  </section>
+
+  <!-- ================= SERVER RULES SECTION ================= -->
+  <section id="rules" class="section section-alt">
+    <div class="container">
+      <div class="section-header">
+        <h2>SRC Server Rules</h2>
+        <p>Punishments escalate based on severity and repeated offenses.</p>
+      </div>
+
+      <!-- Live Search Box -->
+      <div class="search-wrapper">
+        <input
+          type="text"
+          id="ruleSearch"
+          placeholder="Search rules (e.g., trading, pings, English, TOS)..."
+          aria-label="Search server rules"
+        />
+      </div>
+
+      <!-- Rules List (Populated dynamically by script.js) -->
+      <div class="rules-list" id="rulesList"></div>
+    </div>
+  </section>
+
+  <!-- ================= PROOFS & VOUCHES GALLERY ================= -->
+  <section id="proofs" class="section">
+    <div class="container">
+      <div class="section-header">
+        <h2>Shop Proofs &amp; Customer Vouches</h2>
+        <p>Click any screenshot to inspect full transaction and Leviathan hunt proofs.</p>
+      </div>
+
+      <div class="gallery-grid" id="galleryGrid">
+        <div class="gallery-item" data-caption="Shop Transaction Proof #1">
+          <img src="images/proof1.png" alt="Shop Proof 1" onerror="this.src='https://placehold.co/600x400/131b2e/38bdf8?text=Shop+Proof+1+(images/proof1.png)'" />
+          <span>Shop Proof #1</span>
+        </div>
+        <div class="gallery-item" data-caption="Shop Transaction Proof #2">
+          <img src="images/proof2.png" alt="Shop Proof 2" onerror="this.src='https://placehold.co/600x400/131b2e/38bdf8?text=Shop+Proof+2+(images/proof2.png)'" />
+          <span>Shop Proof #2</span>
+        </div>
+        <div class="gallery-item" data-caption="Shop Transaction Proof #3">
+          <img src="images/proof3.png" alt="Shop Proof 3" onerror="this.src='https://placehold.co/600x400/131b2e/38bdf8?text=Shop+Proof+3+(images/proof3.png)'" />
+          <span>Shop Proof #3</span>
+        </div>
+        <div class="gallery-item" data-caption="Verified Customer Vouch">
+          <img src="images/vouch1.png" alt="Customer Vouch" onerror="this.src='https://placehold.co/600x400/131b2e/38bdf8?text=Customer+Vouch+(images/vouch1.png)'" />
+          <span>Customer Vouch</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= IMAGE LIGHTBOX MODAL ================= -->
+  <div class="modal" id="imageModal" aria-hidden="true">
+    <div class="modal-content">
+      <button class="modal-close" id="modalClose" aria-label="Close preview">&times;</button>
+      <img id="modalImg" src="" alt="Expanded proof" />
+      <p id="modalCaption"></p>
+    </div>
+  </div>
+
+  <!-- ================= FOOTER & BOTTOM PAGE CREDIT ================= -->
+  <footer class="footer">
+    <div class="container">
+      <p>
+        <strong>SRC (SEA REAPER Community)</strong> — Please respect Discord Terms of Service and Roblox Community Standards at all times.
+      </p>
+      <p class="footer-link-row">
+        <a
+          href="https://discord.gg/XxMWvK7WcJ"
+          target="_blank"
+          rel="noopener noreferrer"
+          data-discord-link
+        >
+          https://discord.gg/XxMWvK7WcJ
+        </a>
+      </p>
+      <p class="bottom-credit">
+        This Webpage Has Been Made Produced And Uploaded By Ahmotyty
+      </p>
+    </div>
+  </footer>
+
+  <!-- Links our external JavaScript file -->
+  <script src="script.js"></script>
+</body>
+</html>
